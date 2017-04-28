@@ -1,0 +1,40 @@
+{
+	"name": "ui-sketch-for-in",
+	"version": "0.1.0",
+	"description": "sketch plugin for in",
+	"main": "ui-sketch-for-in.sketchplugin",
+	"manifest": "src/manifest.json",
+	"scripts": {
+		"build": "skpm build",
+		"watch": "skpm build --watch",
+		"render": "skpm build --watch --run",
+		"render:once": "skpm build --run",
+		"publish": "skpm publish"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/jschyz/ui-sketch-for-in.git"
+	},
+	"keywords": [
+		"ui-sketch-for-in",
+		"react",
+		"sketch-plugin",
+		"react-sketchapp",
+		"skpm"
+	],
+	"author": "huihui",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/jschyz/ui-sketch-for-in/issues"
+	},
+	"homepage": "https://github.com/jschyz/ui-sketch-for-in#readme",
+	"manifest": "src/manifest.json",
+	"devDependencies": {
+		"skpm": "^0.9.2"
+	},
+	"dependencies": {
+		"react": "^15.5.4",
+		"react-sketchapp": "^0.10.2",
+		"react-test-renderer": "^15.5.4"
+	}
+}
