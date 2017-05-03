@@ -9,7 +9,8 @@
 		"watch": "skpm build --watch",
 		"render": "skpm build --watch --run",
 		"render:once": "skpm build --run",
-		"publish": "skpm publish"
+		"publish": "skpm publish",
+		"lint": "eslint --ext .js,.jsx src"
 	},
 	"repository": {
 		"type": "git",
@@ -29,9 +30,15 @@
 	},
 	"homepage": "https://github.com/jschyz/ui-sketch-for-in#readme",
 	"devDependencies": {
+		"eslint": "^3.19.0",
+		"eslint-config-airbnb": "^14.1.0",
+		"eslint-plugin-import": "^2.2.0",
+		"eslint-plugin-jsx-a11y": "^4.0.0",
+		"eslint-plugin-react": "^6.10.3",
 		"skpm": "^0.9.5"
 	},
 	"dependencies": {
+		"prop-types": "^15.5.8",
 		"react": "^15.5.4",
 		"react-sketchapp": "^0.10.2",
 		"react-test-renderer": "^15.5.4"
