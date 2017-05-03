@@ -1016,6 +1016,10 @@ core-util-is@~1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/core-util-is/-/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
 
+coscript@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/coscript/-/coscript-1.0.0.tgz#1a0ef8d5f8b4a67901b97ae59bd2f51e6cc6b0f1"
+
 cpr@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/cpr/-/cpr-2.0.2.tgz#9e44be91101f644a3e1f8c908712b70cdd547056"
@@ -2405,6 +2409,12 @@ ripemd160@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/ripemd160/-/ripemd160-1.0.1.tgz#93a4bbd4942bc574b69a8fa57c71de10ecca7d6e"
 
+run-sketch-plugin@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/run-sketch-plugin/-/run-sketch-plugin-1.0.1.tgz#b1fcf6b23af690ca392c97ce4c5bbfecb9e2dfa1"
+  dependencies:
+    coscript "^1.0.0"
+
 safe-buffer@^5.0.1:
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.0.1.tgz#d263ca54696cd8a306b5ca6551e92de57918fbe7"
@@ -2495,9 +2505,9 @@ skpm-client@0.2.2:
   dependencies:
     request "2.79.0"
 
-skpm@^0.9.2:
-  version "0.9.4"
-  resolved "https://registry.yarnpkg.com/skpm/-/skpm-0.9.4.tgz#cc3081388c6e960b04a12f5cb3fddb3265f0c96e"
+skpm@0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/skpm/-/skpm-0.9.5.tgz#476860418f5005ab9e77e0f0fdb8cd9b951f2d0b"
   dependencies:
     adm-zip "^0.4.7"
     babel-core "^6.24.1"
@@ -2513,6 +2523,7 @@ skpm@^0.9.2:
     object-assign "^4.1.1"
     open "^0.0.5"
     request "^2.81.0"
+    run-sketch-plugin "^1.0.0"
     semver "^5.3.0"
     simple-plist "^0.2.1"
     sketch-module-console-polyfill "0.1.0"
@@ -2520,7 +2531,6 @@ skpm@^0.9.2:
     skpm-client "0.2.2"
     tar.gz "^1.0.5"
     webpack "^2.3.3"
-    webpack-shell-plugin "^0.5.0"
     yesno "^0.0.1"
 
 slash@^1.0.0:
@@ -2813,10 +2823,6 @@ watchpack@^1.3.1:
     async "^2.1.2"
     chokidar "^1.4.3"
     graceful-fs "^4.1.2"
-
-webpack-shell-plugin@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/webpack-shell-plugin/-/webpack-shell-plugin-0.5.0.tgz#29b8a1d80ddeae0ddb10e729667f728653c2c742"
 
 webpack-sources@^0.2.3:
   version "0.2.3"
