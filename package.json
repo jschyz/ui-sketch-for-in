@@ -10,6 +10,7 @@
 		"render": "skpm build --watch --run",
 		"render:once": "skpm build --run",
 		"publish": "skpm publish",
+		"flow": "flow",
 		"lint": "eslint --ext .js,.jsx src"
 	},
 	"repository": {
@@ -35,6 +36,7 @@
 		"eslint-plugin-import": "^2.2.0",
 		"eslint-plugin-jsx-a11y": "^4.0.0",
 		"eslint-plugin-react": "^6.10.3",
+		"flow-bin": "^0.45.0",
 		"skpm": "^0.9.5"
 	},
 	"dependencies": {
