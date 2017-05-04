@@ -10,8 +10,8 @@
 		"render": "skpm build --watch --run",
 		"render:once": "skpm build --run",
 		"publish": "skpm publish",
-		"flow": "flow",
-		"lint": "eslint --ext .js,.jsx src"
+		"lint": "eslint --ext .js,.jsx src",
+		"flow": "flow check"
 	},
 	"repository": {
 		"type": "git",
