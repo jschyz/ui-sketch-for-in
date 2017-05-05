@@ -7,14 +7,15 @@ const Document = ({ children }) => (
     name="色彩"
   >
     <View
-      name="bg"
+      name="background"
       style={{
         borderWidth: 10,
         borderColor: '#fff',
         borderStyle: 'solid',
         backgroundColor: '#f6f6f6',
-        flexDirection: 'column-reverse',
+        flexDirection: 'column',
         width: 1080,
+        padding: 40,
       }}
     >
       {children}
