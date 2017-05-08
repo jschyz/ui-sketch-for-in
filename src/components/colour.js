@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     fontFamily: 'PingFang SC',
     fontWeight: 'bold',
     color: '#fff',
-    alignSelf: 'flex-end',
+    alignSelf: 'flex-start',
   },
   hex: {
     fontSize: 9,
