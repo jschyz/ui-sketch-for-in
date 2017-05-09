@@ -35,12 +35,21 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#fff',
   },
+  desc: {
+    fontSize: 9,
+    fontFamily: 'PingFang SC',
+    fontWeight: 'bold',
+    color: '#333',
+  },
+  pairs: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
   rgb: {
     fontSize: 9,
     fontFamily: 'PingFang SC',
     fontWeight: 'bold',
     color: '#fff',
-    alignSelf: 'flex-start',
   },
   hex: {
     fontSize: 9,
@@ -50,7 +59,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Lump = ({ name, hex }) => (
+const Lump = ({ name, desc, hex }) => (
   <View
     name={name}
     style={{
@@ -61,8 +70,16 @@ const Lump = ({ name, hex }) => (
     }}
   >
     <Text name={name} style={styles.box}>{name}</Text>
-    <Text name="RGB" style={styles.rgb}>RGB {chroma(hex).rgb().join(',')}</Text>
-    <Text name="Hex" style={styles.hex}>Hex {hex}</Text>
+    <Text name={desc} style={styles.desc}>{desc}</Text>
+    <View name="属性值" style={styles.pairs}>
+      <Text name="RGB" style={styles.rgb}>RGB</Text>
+      <Text name="RGB" style={styles.rgb}>{chroma(hex).rgb().join(',')}</Text>
+    </View>
+    <View name="属性值" style={styles.pairs}>
+      <Text name="Hex" style={styles.hex}>Hex</Text>
+      <Text name="Hex" style={styles.hex}>{hex}</Text>
+    </View>
+
   </View>
 );
 
@@ -77,7 +94,7 @@ const Colour = ({ colors }) => (
       <Text name="Chinese" style={styles.chinese}>{colors.ChineseName}</Text>
       <Text name="English" style={styles.english}>{colors.EnglishName}</Text>
     </View>
-    {colors.list.map(lump => <Lump name={lump.name} hex={lump.hex} />)}
+    {colors.list.map(lump => <Lump name={lump.name} desc={lump.desc} hex={lump.hex} key={lump.name} />)}
   </View>
 );
 
