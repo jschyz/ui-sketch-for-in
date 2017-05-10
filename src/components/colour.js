@@ -85,6 +85,7 @@ const Lump = ({ name, desc, hex }) => (
 
 Lump.propTypes = {
   name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
   hex: PropTypes.string.isRequired,
 };
 
