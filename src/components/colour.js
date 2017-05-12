@@ -67,6 +67,8 @@ const Lump = ({ name, desc, hex }) => (
       height: 90,
       padding: 5,
       backgroundColor: hex,
+      flexDirection: 'column',
+      justifyContent: 'space-between'
     }}
   >
     <Text name={name} style={styles.box}>{name}</Text>
@@ -79,7 +81,6 @@ const Lump = ({ name, desc, hex }) => (
       <Text name="Hex" style={styles.hex}>Hex</Text>
       <Text name="Hex" style={styles.hex}>{hex}</Text>
     </View>
-
   </View>
 );
 
